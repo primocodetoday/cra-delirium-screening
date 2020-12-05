@@ -2,11 +2,21 @@
   "typescript.tsdk": "node_modules\\typescript\\lib",
   "cSpell.words": [
     "Aktualna",
+    "Czynniki",
     "Nowy",
     "Pacjenta",
     "Podaj",
+    "Ryzyka",
+    "Skala",
     "Wyloguj",
+    "Wyniki",
     "bazie",
-    "pacjent"
+    "godzina",
+    "leczenia",
+    "pacjent",
+    "podczas",
+    "podsypia",
+    "rozmowy",
+    "rozproszeniu"
   ]
 }
