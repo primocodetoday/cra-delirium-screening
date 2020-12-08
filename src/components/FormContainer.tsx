@@ -1,9 +1,9 @@
 ﻿import * as React from 'react';
 import { Switch, Route } from 'react-router-dom';
 import { ROUTES } from 'routes';
-import DossScale from 'components/DossScale';
-import RiskFactors from './RiskFactors';
-import TreatmentResults from './TreatmentResults';
+import DossScale from 'components/forms/DossScale';
+import RiskFactors from './forms/RiskFactors';
+import TreatmentResults from './forms/TreatmentResults';
 
 const FormContainer = () => {
   return (

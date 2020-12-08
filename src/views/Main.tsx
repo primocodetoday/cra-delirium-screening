@@ -7,7 +7,6 @@ import { ROUTES } from 'routes';
 
 const Main = () => {
   const now = dayjs.default().format('YYYY-MM-DD HH:mm:ss');
-  console.log(now);
 
   return (
     <div>

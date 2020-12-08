@@ -1,22 +1,12 @@
 {
   "typescript.tsdk": "node_modules\\typescript\\lib",
   "cSpell.words": [
-    "Aktualna",
-    "Czynniki",
-    "Nowy",
-    "Pacjenta",
-    "Podaj",
-    "Ryzyka",
-    "Skala",
-    "Wyloguj",
-    "Wyniki",
-    "bazie",
-    "godzina",
-    "leczenia",
-    "pacjent",
-    "podczas",
-    "podsypia",
-    "rozmowy",
-    "rozproszeniu"
+    "OINP",
+    "Reoperacja",
+    "antybiotykoterapii",
+    "nerkozast",
+    "nerkozastępczej",
+    "pczej",
+    "sedacja"
   ]
 }

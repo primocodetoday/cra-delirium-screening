@@ -42,4 +42,46 @@ export const dossForm: DossForm[] = [
     options: ['nigdy', 'czasem/zawsze'],
     type: 'select',
   },
+  {
+    id: 7,
+    label: 'Podnosi przedmioty, wykonuje bezładne ruchy, niespokojny?',
+    options: ['nigdy', 'czasem/zawsze'],
+    type: 'select',
+  },
+  {
+    id: 8,
+    label: 'Ciągnie za linie naczyniowe, sondy, dreny, cewniki itp.?',
+    options: ['nigdy', 'czasem/zawsze'],
+    type: 'select',
+  },
+  {
+    id: 9,
+    label: 'Łatwo ulega emocjom (lękowi, złości, zdenerwowaniu)?',
+    options: ['nigdy', 'czasem/zawsze'],
+    type: 'select',
+  },
+  {
+    id: 10,
+    label: 'Widzi osoby/przedmioty jako kogoś/coś innego?',
+    options: ['nigdy', 'czasem/zawsze'],
+    type: 'select',
+  },
+  {
+    id: 11,
+    label: 'Zachowuje uwagę w trakcie rozmowy lub czynności?',
+    options: [' zawsze', 'czasem/nigdy'],
+    type: 'select',
+  },
+  {
+    id: 12,
+    label: 'Rozpoznaje porę dnia?',
+    options: [' zawsze', 'czasem/nigdy'],
+    type: 'select',
+  },
+  {
+    id: 13,
+    label: 'Pamięta świeże zdarzenia?',
+    options: [' zawsze', 'czasem/nigdy'],
+    type: 'select',
+  },
 ];

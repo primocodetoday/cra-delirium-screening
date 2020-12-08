@@ -1,8 +1,8 @@
 ﻿export enum ROUTES {
   HOME = '/',
   SIGNIN = '/signin',
-  FORMS = '/forms',
-  DOSS = '/forms/doss',
-  RISK = '/forms/risk',
-  RESULTS = '/forms/results',
+  FORMS = '/formularze',
+  DOSS = '/formularze/doss',
+  RISK = '/formularze/ryzyko',
+  RESULTS = '/formularze/wyniki',
 }
