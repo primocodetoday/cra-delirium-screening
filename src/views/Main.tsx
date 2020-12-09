@@ -17,12 +17,12 @@ const Main = () => {
         <Button as={Link} to={ROUTES.DOSS} className="m-3">
           Skala DOSS
         </Button>
-        <Button as={Link} to={ROUTES.RISK} className="m-3">
+        {/* <Button as={Link} to={ROUTES.RISK} className="m-3">
           Czynniki Ryzyka
         </Button>
         <Button as={Link} to={ROUTES.RESULTS} className="m-3">
           Wyniki leczenia
-        </Button>
+        </Button> */}
       </Row>
       <FormContainer />
     </div>

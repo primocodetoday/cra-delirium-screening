@@ -6,24 +6,31 @@ export type InputProps = {
   name: string;
   options?: string[];
   type?: 'select' | 'text' | 'number';
+  register: any;
 };
 
-export const Input = ({ label, name, options = [], type = 'text' }: InputProps) => {
+export const Input = ({ label, name, options = [], type = 'text', register }: InputProps) => {
   const opts = options.length
     ? options.map((opt, idx) => {
-        return <option key={idx}>{opt}</option>;
+        return (
+          <option key={idx} value={opt}>
+            {opt}
+          </option>
+        );
       })
     : null;
 
   return (
     <Form.Group>
-      <Form.Label className="mb-2 font-weight-bold">{label}</Form.Label>
+      <Form.Label htmlFor={name} className="mb-2 font-weight-bold">
+        {label}
+      </Form.Label>
       {type === 'select' ? (
-        <Form.Control name={name} as={type} className="text-center mb-4">
+        <Form.Control name={name} as={type} ref={register} className="text-center mb-4">
           {opts}
         </Form.Control>
       ) : (
-        <Form.Control name={name} type={type} className="text-center mb-4" />
+        <Form.Control name={name} type={type} ref={register} className="text-center mb-4" />
       )}
     </Form.Group>
   );
