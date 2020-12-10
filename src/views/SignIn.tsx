@@ -12,7 +12,7 @@ const SignIn = () => {
 
   return (
     <Container style={{ height: '100vh' }} fluid="sm">
-      <Row className=" justify-content-center align-items-center h-100">
+      <Row className=" justify-content-center align-items-center h-100 px-4">
         <Col xs={12} sm={8} md={6} className="">
           <Card className="mx-auto my-auto py-3 px-4">
             <Card.Title className="text-uppercase text-center">Delirium</Card.Title>
