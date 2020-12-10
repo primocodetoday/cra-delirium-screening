@@ -26,10 +26,10 @@ const DossScale = () => {
               register={register}
             />
           ))}
+          <Row className="justify-content-center">
+            <Button type="submit">Wyślij </Button>
+          </Row>
         </Form>
-        <Row className="justify-content-center">
-          <Button type="submit">Wyślij </Button>
-        </Row>
       </Col>
     </Row>
   );
