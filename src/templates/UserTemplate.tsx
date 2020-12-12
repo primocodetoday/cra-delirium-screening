@@ -6,7 +6,7 @@ const UserTemplate: React.FC = ({ children }) => {
   return (
     <Container className="px-0">
       <TopNav />
-      {children}
+      <Container>{children}</Container>
     </Container>
   );
 };

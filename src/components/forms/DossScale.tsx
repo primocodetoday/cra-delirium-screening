@@ -1,5 +1,5 @@
 ﻿import * as React from 'react';
-import { Row, Col, Form, Button } from 'react-bootstrap';
+import { Row, Col, Form, Button, Card } from 'react-bootstrap';
 import Input from 'components/Input';
 import { dossForm } from 'constants/dossForm';
 import { useForm } from 'react-hook-form';
@@ -17,14 +17,15 @@ const DossScale = () => {
         <h3 className="text-uppercase text-center mb-4">Skala DOSS</h3>
         <Form onSubmit={handleSubmit(onSubmit)}>
           {dossForm.map((input) => (
-            <Input
-              key={input.id}
-              label={input.label}
-              name={input.name}
-              options={input.options}
-              type={input.type}
-              register={register}
-            />
+            <Card key={input.id}>
+              <Input
+                label={input.label}
+                name={input.name}
+                options={input.options}
+                type={input.type}
+                register={register}
+              />
+            </Card>
           ))}
           <Row className="justify-content-center">
             <Button type="submit">Wyślij </Button>

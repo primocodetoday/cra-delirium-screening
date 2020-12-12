@@ -2,8 +2,8 @@
   HOME = '/',
   SIGNIN = '/signin',
   ID = '/id',
-  FORMS = '/forms',
-  DOSS = '/forms/doss',
-  RISK = '/forms/ryzyko',
-  RESULTS = '/forms/wyniki',
+  FORMS = '/patient',
+  DOSS = '/patient/doss',
+  RISK = '/patient/ryzyko',
+  RESULTS = '/patient/wyniki',
 }

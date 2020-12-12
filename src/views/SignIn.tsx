@@ -18,7 +18,7 @@ const SignIn = () => {
             <Card.Title className="text-uppercase text-center">Delirium</Card.Title>
             <Form onSubmit={handleSignIn}>
               <Form.Group>
-                <Form.Label>Email address</Form.Label>
+                <Form.Label>Numer pracownika</Form.Label>
                 <Form.Control type="email" placeholder="Enter email" />
               </Form.Group>
 

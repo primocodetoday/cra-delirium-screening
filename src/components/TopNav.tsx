@@ -5,7 +5,7 @@ import { NavLink } from 'react-router-dom';
 
 const TopNav = () => {
   return (
-    <Navbar bg="light" expand="lg">
+    <Navbar bg="light" expand="lg" className="mb-4">
       <Navbar.Brand as={NavLink} exact to={ROUTES.HOME}>
         Delirium Screening
       </Navbar.Brand>
