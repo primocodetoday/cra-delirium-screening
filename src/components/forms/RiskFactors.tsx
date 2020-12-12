@@ -1,6 +1,6 @@
 ﻿import * as React from 'react';
 import { Row, Col, Form } from 'react-bootstrap';
-import Input from 'components/Input';
+import InputSelector from 'components/InputSelector';
 import { riskForm } from 'constants/riskForm';
 import { useForm } from 'react-hook-form';
 
@@ -15,10 +15,10 @@ const RiskFactors = () => {
         <h3 className="text-uppercase text-center mb-4">Czynniki Ryzyka</h3>
         <Form>
           {riskForm.map((input) => (
-            <Input
+            <InputSelector
               key={input.id}
               label={input.label}
-              name="doss1"
+              name={input.name}
               options={input.options}
               type={input.type}
               register={register}

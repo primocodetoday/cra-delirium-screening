@@ -1,4 +1,5 @@
-﻿import { IForm } from './form.interface';
+﻿import { IForm } from './forms.interface';
+import { InputType } from 'components/InputSelector';
 
 export const dossForm: IForm[] = [
   {
@@ -7,9 +8,9 @@ export const dossForm: IForm[] = [
     label: '1.Pacjent podsypia podczas rozmowy lub czynności?',
     options: [
       { label: 'nigdy', value: 0 },
-      { label: 'czasem/zawsze', value: 1 },
+      { label: 'czasem /zawsze', value: 1 },
     ],
-    type: 'select',
+    type: InputType.RADIO,
   },
   {
     id: 2,
@@ -17,9 +18,9 @@ export const dossForm: IForm[] = [
     label: '2.Ulega łatwo rozproszeniu na bodźce z otoczenia?',
     options: [
       { label: 'nigdy', value: 0 },
-      { label: 'czasem/zawsze', value: 1 },
+      { label: 'czasem /zawsze', value: 1 },
     ],
-    type: 'select',
+    type: InputType.RADIO,
   },
   {
     id: 3,
@@ -27,9 +28,9 @@ export const dossForm: IForm[] = [
     label: '3.Nie kończy pytania lub zdania?',
     options: [
       { label: 'nigdy', value: 0 },
-      { label: 'czasem/zawsze', value: 1 },
+      { label: 'czasem /zawsze', value: 1 },
     ],
-    type: 'select',
+    type: InputType.RADIO,
   },
   {
     id: 4,
@@ -37,9 +38,9 @@ export const dossForm: IForm[] = [
     label: '4.Odpowiada nie na temat?',
     options: [
       { label: 'nigdy', value: 0 },
-      { label: 'czasem/zawsze', value: 1 },
+      { label: 'czasem /zawsze', value: 1 },
     ],
-    type: 'select',
+    type: InputType.RADIO,
   },
   {
     id: 5,
@@ -47,9 +48,9 @@ export const dossForm: IForm[] = [
     label: '5.Reaguje z opóźnieniem na polecenia?',
     options: [
       { label: 'nigdy', value: 0 },
-      { label: 'czasem/zawsze', value: 1 },
+      { label: 'czasem /zawsze', value: 1 },
     ],
-    type: 'select',
+    type: InputType.RADIO,
   },
   {
     id: 6,
@@ -57,9 +58,9 @@ export const dossForm: IForm[] = [
     label: 'Myśli, że znajduje się gdzie indziej?',
     options: [
       { label: 'nigdy', value: 0 },
-      { label: 'czasem/zawsze', value: 1 },
+      { label: 'czasem /zawsze', value: 1 },
     ],
-    type: 'select',
+    type: InputType.RADIO,
   },
   {
     id: 7,
@@ -67,9 +68,9 @@ export const dossForm: IForm[] = [
     label: 'Podnosi przedmioty, wykonuje bezładne ruchy, niespokojny?',
     options: [
       { label: 'nigdy', value: 0 },
-      { label: 'czasem/zawsze', value: 1 },
+      { label: 'czasem /zawsze', value: 1 },
     ],
-    type: 'select',
+    type: InputType.RADIO,
   },
   {
     id: 8,
@@ -77,9 +78,9 @@ export const dossForm: IForm[] = [
     label: 'Ciągnie za linie naczyniowe, sondy, dreny, cewniki itp.?',
     options: [
       { label: 'nigdy', value: 0 },
-      { label: 'czasem/zawsze', value: 1 },
+      { label: 'czasem /zawsze', value: 1 },
     ],
-    type: 'select',
+    type: InputType.RADIO,
   },
   {
     id: 9,
@@ -87,9 +88,9 @@ export const dossForm: IForm[] = [
     label: 'Łatwo ulega emocjom (lękowi, złości, zdenerwowaniu)?',
     options: [
       { label: 'nigdy', value: 0 },
-      { label: 'czasem/zawsze', value: 1 },
+      { label: 'czasem /zawsze', value: 1 },
     ],
-    type: 'select',
+    type: InputType.RADIO,
   },
   {
     id: 10,
@@ -97,9 +98,9 @@ export const dossForm: IForm[] = [
     label: 'Widzi osoby/przedmioty jako kogoś/coś innego?',
     options: [
       { label: 'nigdy', value: 0 },
-      { label: 'czasem/zawsze', value: 1 },
+      { label: 'czasem /zawsze', value: 1 },
     ],
-    type: 'select',
+    type: InputType.RADIO,
   },
   {
     id: 11,
@@ -107,9 +108,9 @@ export const dossForm: IForm[] = [
     label: 'Zachowuje uwagę w trakcie rozmowy lub czynności?',
     options: [
       { label: 'zawsze', value: 0 },
-      { label: 'czasem/nigdy', value: 1 },
+      { label: 'czasem /nigdy', value: 1 },
     ],
-    type: 'select',
+    type: InputType.RADIO,
   },
   {
     id: 12,
@@ -117,9 +118,9 @@ export const dossForm: IForm[] = [
     label: 'Rozpoznaje porę dnia?',
     options: [
       { label: 'zawsze', value: 0 },
-      { label: 'czasem/nigdy', value: 1 },
+      { label: 'czasem /nigdy', value: 1 },
     ],
-    type: 'select',
+    type: InputType.RADIO,
   },
   {
     id: 13,
@@ -127,8 +128,8 @@ export const dossForm: IForm[] = [
     label: 'Pamięta świeże zdarzenia?',
     options: [
       { label: 'zawsze', value: 0 },
-      { label: 'czasem/nigdy', value: 1 },
+      { label: 'czasem /nigdy', value: 1 },
     ],
-    type: 'select',
+    type: InputType.RADIO,
   },
 ];

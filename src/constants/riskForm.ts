@@ -1,4 +1,5 @@
-﻿import { IForm } from './form.interface';
+﻿import { IForm } from './forms.interface';
+import { InputType } from 'components/InputSelector';
 
 export const riskForm: IForm[] = [
   {
@@ -9,13 +10,13 @@ export const riskForm: IForm[] = [
       { label: 'tak', value: 1 },
       { label: 'nie', value: 0 },
     ],
-    type: 'select',
+    type: InputType.RADIO,
   },
   {
     id: 2,
     name: 'wiek',
     label: 'Wiek pacjenta',
-    type: 'number',
+    type: InputType.NUMBER,
   },
   {
     id: 3,
@@ -25,7 +26,7 @@ export const riskForm: IForm[] = [
       { label: 'tak', value: 1 },
       { label: 'nie', value: 0 },
     ],
-    type: 'select',
+    type: InputType.RADIO,
   },
   {
     id: 4,
@@ -35,13 +36,13 @@ export const riskForm: IForm[] = [
       { label: 'tak', value: 1 },
       { label: 'nie', value: 0 },
     ],
-    type: 'select',
+    type: InputType.RADIO,
   },
   {
     id: 5,
     name: 'bmi',
     label: 'BMI',
-    type: 'number',
+    type: InputType.NUMBER,
   },
   {
     id: 6,
@@ -51,7 +52,7 @@ export const riskForm: IForm[] = [
       { label: 'tak', value: 1 },
       { label: 'nie', value: 0 },
     ],
-    type: 'select',
+    type: InputType.RADIO,
   },
   {
     id: 7,
@@ -61,7 +62,7 @@ export const riskForm: IForm[] = [
       { label: 'tak', value: 1 },
       { label: 'nie', value: 0 },
     ],
-    type: 'select',
+    type: InputType.RADIO,
   },
   {
     id: 8,
@@ -71,7 +72,7 @@ export const riskForm: IForm[] = [
       { label: 'tak', value: 1 },
       { label: 'nie', value: 0 },
     ],
-    type: 'select',
+    type: InputType.RADIO,
   },
   {
     id: 9,
@@ -81,7 +82,7 @@ export const riskForm: IForm[] = [
       { label: 'tak', value: 1 },
       { label: 'nie', value: 0 },
     ],
-    type: 'select',
+    type: InputType.RADIO,
   },
   {
     id: 10,
@@ -91,7 +92,7 @@ export const riskForm: IForm[] = [
       { label: 'tak', value: 1 },
       { label: 'nie', value: 0 },
     ],
-    type: 'select',
+    type: InputType.RADIO,
   },
   {
     id: 11,
@@ -101,7 +102,7 @@ export const riskForm: IForm[] = [
       { label: 'tak', value: 1 },
       { label: 'nie', value: 0 },
     ],
-    type: 'select',
+    type: InputType.RADIO,
   },
   {
     id: 12,
@@ -111,6 +112,6 @@ export const riskForm: IForm[] = [
       { label: 'tak', value: 1 },
       { label: 'nie', value: 0 },
     ],
-    type: 'select',
+    type: InputType.RADIO,
   },
 ];

@@ -1,6 +1,6 @@
 ﻿import * as React from 'react';
 import { Row, Col, Form } from 'react-bootstrap';
-import Input from 'components/Input';
+import InputSelector from 'components/InputSelector';
 import { treatForm } from 'constants/treatForm';
 import { useForm } from 'react-hook-form';
 
@@ -15,10 +15,10 @@ const TreatmentResults = () => {
         <h3 className="text-uppercase text-center mb-4">Wyniki leczenia</h3>
         <Form>
           {treatForm.map((input) => (
-            <Input
+            <InputSelector
               key={input.id}
               label={input.label}
-              name="doss1"
+              name={input.name}
               options={input.options}
               type={input.type}
               register={register}

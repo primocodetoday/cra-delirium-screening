@@ -1,11 +1,12 @@
-﻿import { IForm } from './form.interface';
+﻿import { IForm } from './forms.interface';
+import { InputType } from 'components/InputSelector';
 
 export const treatForm: IForm[] = [
   {
     id: 1,
     name: 'czashosp',
     label: 'Czas hospitalizacji (dni)',
-    type: 'number',
+    type: InputType.NUMBER,
   },
   {
     id: 2,
@@ -15,7 +16,7 @@ export const treatForm: IForm[] = [
       { label: 'tak', value: 1 },
       { label: 'nie', value: 0 },
     ],
-    type: 'select',
+    type: InputType.RADIO,
   },
   {
     id: 3,
@@ -25,7 +26,7 @@ export const treatForm: IForm[] = [
       { label: 'tak', value: 1 },
       { label: 'nie', value: 0 },
     ],
-    type: 'select',
+    type: InputType.RADIO,
   },
   {
     id: 4,
@@ -35,37 +36,37 @@ export const treatForm: IForm[] = [
       { label: 'tak', value: 1 },
       { label: 'nie', value: 0 },
     ],
-    type: 'select',
+    type: InputType.RADIO,
   },
   {
     id: 5,
     name: 'przymus',
     label: 'Długość stosowania przymusu bezpośredniego (h)',
-    type: 'number',
+    type: InputType.NUMBER,
   },
   {
     id: 6,
     name: 'wentyl',
     label: 'Czas stosowania sztucznej wentylacji (h)',
-    type: 'number',
+    type: InputType.NUMBER,
   },
   {
     id: 7,
     name: 'intub',
     label: 'Ilość ponownych intubacji',
-    type: 'number',
+    type: InputType.NUMBER,
   },
   {
     id: 8,
     name: 'swiadom',
     label: 'Czas występowania zaburzeń świadomości (h)',
-    type: 'number',
+    type: InputType.NUMBER,
   },
   {
     id: 9,
     name: 'transfuz',
     label: 'Ilość transfuzji preparatów krwi w OINP',
-    type: 'number',
+    type: InputType.NUMBER,
   },
   {
     id: 10,
@@ -75,13 +76,13 @@ export const treatForm: IForm[] = [
       { label: 'tak', value: 1 },
       { label: 'nie', value: 0 },
     ],
-    type: 'select',
+    type: InputType.RADIO,
   },
   {
     id: 11,
     name: 'tnerkozast',
     label: 'Czas stosowania terapii nerkozastępczej (h)',
-    type: 'number',
+    type: InputType.NUMBER,
   },
   {
     id: 12,
@@ -91,25 +92,25 @@ export const treatForm: IForm[] = [
       { label: 'tak', value: 1 },
       { label: 'nie', value: 0 },
     ],
-    type: 'select',
+    type: InputType.RADIO,
   },
   {
     id: 13,
     name: 'katechol',
     label: 'Czas stosowania katecholamin (h)',
-    type: 'number',
+    type: InputType.NUMBER,
   },
   {
     id: 14,
     name: 'ponowprzyj',
     label: 'Ilość ponownych przyjęć na OINP',
-    type: 'number',
+    type: InputType.NUMBER,
   },
   {
     id: 15,
     name: 'antybiot',
     label: 'Ilość nowych cykli antybiotykoterapii',
-    type: 'number',
+    type: InputType.NUMBER,
   },
   {
     id: 16,
@@ -119,6 +120,6 @@ export const treatForm: IForm[] = [
       { label: 'tak', value: 1 },
       { label: 'nie', value: 0 },
     ],
-    type: 'select',
+    type: InputType.RADIO,
   },
 ];
