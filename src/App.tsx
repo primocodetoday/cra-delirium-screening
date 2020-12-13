@@ -5,6 +5,9 @@ import SignIn from 'views/SignIn';
 import PatientID from 'views/PatientID';
 import Patient from 'views/Patient';
 import PatientForms from 'views/PatientForms';
+import DossScale from 'components/forms/DossScale';
+import RiskFactors from 'components/forms/RiskFactors';
+import TreatmentResults from 'components/forms/TreatmentResults';
 
 const App = () => {
   return (
@@ -13,9 +16,30 @@ const App = () => {
         <Route exact path={ROUTES.HOME} component={SignIn} />
         <Route exact path={ROUTES.ID} component={PatientID} />
         <Route exact path={ROUTES.FORMS} component={Patient} />
-        <Route path={ROUTES.DOSS} render={(props) => <PatientForms {...props} formType="doss" />} />
-        <Route path={ROUTES.RISK} render={(props) => <PatientForms {...props} formType="risk" />} />
-        <Route path={ROUTES.RESULTS} render={(props) => <PatientForms {...props} formType="results" />} />
+        <Route
+          path={ROUTES.DOSS}
+          render={(props) => (
+            <PatientForms {...props}>
+              <DossScale />
+            </PatientForms>
+          )}
+        />
+        <Route
+          path={ROUTES.RISK}
+          render={(props) => (
+            <PatientForms {...props}>
+              <RiskFactors />
+            </PatientForms>
+          )}
+        />
+        <Route
+          path={ROUTES.RESULTS}
+          render={(props) => (
+            <PatientForms {...props}>
+              <TreatmentResults />
+            </PatientForms>
+          )}
+        />
       </Switch>
     </BrowserRouter>
   );

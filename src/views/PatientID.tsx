@@ -1,6 +1,5 @@
 ﻿import * as React from 'react';
-import { Container, Form, Row, Col, Button, Card } from 'react-bootstrap';
-import TopNav from 'components/TopNav';
+import { Form, Row, Col, Button, Card } from 'react-bootstrap';
 import { useHistory } from 'react-router-dom';
 import { ROUTES } from 'routes';
 import UserTemplate from 'templates/UserTemplate';
