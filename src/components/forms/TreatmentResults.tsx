@@ -7,7 +7,10 @@ import { useForm } from 'react-hook-form';
 // wypełniany jako stan
 const TreatmentResults = () => {
   const { register, handleSubmit, errors } = useForm();
-  const onSubmit = (data: any) => console.log(data);
+  const onSubmit = (data: any) => {
+    const date = new Date();
+    console.dir(date);
+  };
 
   return (
     <Row className="d-flex justify-content-center mt-3">
