@@ -1,95 +1,125 @@
-﻿interface TreatForm {
-  id: number;
-  label: string;
-  options?: string[];
-  type: 'select' | 'text' | 'number';
-}
+﻿import { IForm } from './forms.interface';
+import { InputType } from 'components/InputSelector';
 
-export const treatForm: TreatForm[] = [
+export const treatForm: IForm[] = [
   {
     id: 1,
+    name: 'czashosp',
     label: 'Czas hospitalizacji (dni)',
-    type: 'number',
+    type: InputType.NUMBER,
   },
   {
     id: 2,
+    name: 'sedacja',
     label: 'Przedłużona sedacja ',
-    options: ['tak', 'nie'],
-    type: 'select',
+    options: [
+      { label: 'tak', value: 1 },
+      { label: 'nie', value: 0 },
+    ],
+    type: InputType.RADIO,
   },
   {
     id: 3,
+    name: 'lekppsych',
     label: 'Zastosowanie leków p/psychotycznych',
-    options: ['tak', 'nie'],
-    type: 'select',
+    options: [
+      { label: 'tak', value: 1 },
+      { label: 'nie', value: 0 },
+    ],
+    type: InputType.RADIO,
   },
   {
     id: 4,
+    name: 'reop',
     label: 'Reoperacja',
-    options: ['tak', 'nie'],
-    type: 'select',
+    options: [
+      { label: 'tak', value: 1 },
+      { label: 'nie', value: 0 },
+    ],
+    type: InputType.RADIO,
   },
   {
     id: 5,
+    name: 'przymus',
     label: 'Długość stosowania przymusu bezpośredniego (h)',
-    type: 'number',
+    type: InputType.NUMBER,
   },
   {
     id: 6,
+    name: 'wentyl',
     label: 'Czas stosowania sztucznej wentylacji (h)',
-    type: 'number',
+    type: InputType.NUMBER,
   },
   {
     id: 7,
+    name: 'intub',
     label: 'Ilość ponownych intubacji',
-    type: 'number',
+    type: InputType.NUMBER,
   },
   {
     id: 8,
+    name: 'swiadom',
     label: 'Czas występowania zaburzeń świadomości (h)',
-    type: 'number',
+    type: InputType.NUMBER,
   },
   {
     id: 9,
+    name: 'transfuz',
     label: 'Ilość transfuzji preparatów krwi w OINP',
-    type: 'number',
+    type: InputType.NUMBER,
   },
   {
     id: 10,
+    name: 'resuscyt',
     label: 'Resuscytacja',
-    options: ['tak', 'nie'],
-    type: 'select',
+    options: [
+      { label: 'tak', value: 1 },
+      { label: 'nie', value: 0 },
+    ],
+    type: InputType.RADIO,
   },
   {
     id: 11,
+    name: 'tnerkozast',
     label: 'Czas stosowania terapii nerkozastępczej (h)',
-    type: 'number',
+    type: InputType.NUMBER,
   },
   {
     id: 12,
+    name: 'krazenie',
     label: 'Konieczność mechanicznego wspomagania krążenia',
-    options: ['tak', 'nie'],
-    type: 'select',
+    options: [
+      { label: 'tak', value: 1 },
+      { label: 'nie', value: 0 },
+    ],
+    type: InputType.RADIO,
   },
   {
     id: 13,
+    name: 'katechol',
     label: 'Czas stosowania katecholamin (h)',
-    type: 'number',
+    type: InputType.NUMBER,
   },
   {
     id: 14,
+    name: 'ponowprzyj',
     label: 'Ilość ponownych przyjęć na OINP',
-    type: 'number',
+    type: InputType.NUMBER,
   },
   {
     id: 15,
+    name: 'antybiot',
     label: 'Ilość nowych cykli antybiotykoterapii',
-    type: 'number',
+    type: InputType.NUMBER,
   },
   {
     id: 16,
+    name: 'zgon30dni',
     label: 'Śmiertelność 30-dniowa ',
-    options: ['tak', 'nie'],
-    type: 'select',
+    options: [
+      { label: 'tak', value: 1 },
+      { label: 'nie', value: 0 },
+    ],
+    type: InputType.RADIO,
   },
 ];

@@ -1,79 +1,117 @@
-﻿interface RiskForm {
-  id: number;
-  label: string;
-  options?: string[];
-  type: 'select' | 'text' | 'number';
-}
+﻿import { IForm } from './forms.interface';
+import { InputType } from 'components/InputSelector';
 
-export const riskForm: RiskForm[] = [
+export const riskForm: IForm[] = [
   {
     id: 1,
+    name: 'trybostry',
     label: 'Tryb ostry operacji',
-    options: ['tak', 'nie'],
-    type: 'select',
+    options: [
+      { label: 'tak', value: 1 },
+      { label: 'nie', value: 0 },
+    ],
+    type: InputType.RADIO,
   },
   {
     id: 2,
+    name: 'wiek',
     label: 'Wiek pacjenta',
-    type: 'number',
+    type: InputType.NUMBER,
   },
   {
     id: 3,
+    name: 'hipertens',
     label: 'Nadciśnienie tętnicze',
-    options: ['tak', 'nie'],
-    type: 'select',
+    options: [
+      { label: 'tak', value: 1 },
+      { label: 'nie', value: 0 },
+    ],
+    type: InputType.RADIO,
   },
   {
     id: 4,
+    name: 'migprzed',
     label: 'Migotanie przedsionków',
-    options: ['tak', 'nie'],
-    type: 'select',
+    options: [
+      { label: 'tak', value: 1 },
+      { label: 'nie', value: 0 },
+    ],
+    type: InputType.RADIO,
   },
   {
     id: 5,
+    name: 'bmi',
     label: 'BMI',
-    type: 'number',
+    type: InputType.NUMBER,
   },
   {
     id: 6,
+    name: 'inhibace',
     label: 'Przyjmowanie Inhibitorów ACE/ARB',
-    options: ['tak', 'nie'],
-    type: 'select',
+    options: [
+      { label: 'tak', value: 1 },
+      { label: 'nie', value: 0 },
+    ],
+    type: InputType.RADIO,
   },
   {
     id: 7,
+    name: 'niedos',
     label: 'Niedosłuch',
-    options: ['tak', 'nie'],
-    type: 'select',
+    options: [
+      { label: 'tak', value: 1 },
+      { label: 'nie', value: 0 },
+    ],
+    type: InputType.RADIO,
   },
   {
     id: 8,
+    name: 'dement',
     label: 'Demencja',
-    options: ['tak', 'nie'],
-    type: 'select',
+    options: [
+      { label: 'tak', value: 1 },
+      { label: 'nie', value: 0 },
+    ],
+    type: InputType.RADIO,
   },
   {
     id: 9,
+    name: 'miazdz',
     label: 'Miażdżyca naczyń obwodowych',
-    options: ['tak', 'nie'],
-    type: 'select',
+    options: [
+      { label: 'tak', value: 1 },
+      { label: 'nie', value: 0 },
+    ],
+    type: InputType.RADIO,
   },
   {
     id: 10,
+    name: 'zawal',
     label: 'Przebyty zawał serca',
-    options: ['tak', 'nie'],
-    type: 'select',
+    options: [
+      { label: 'tak', value: 1 },
+      { label: 'nie', value: 0 },
+    ],
+    type: InputType.RADIO,
   },
   {
     id: 11,
+    name: 'depres',
     label: 'Depresja',
-    options: ['tak', 'nie'],
-    type: 'select',
+    options: [
+      { label: 'tak', value: 1 },
+      { label: 'nie', value: 0 },
+    ],
+    type: InputType.RADIO,
   },
   {
     id: 12,
+    name: 'diabet',
     label: 'Cukrzyca',
-    options: ['tak', 'nie'],
-    type: 'select',
+    options: [
+      { label: 'tak', value: 1 },
+      { label: 'nie', value: 0 },
+    ],
+    type: InputType.RADIO,
   },
 ];
