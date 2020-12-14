@@ -2,9 +2,22 @@
 import { Container, Card, Row, Col, Form, Button } from 'react-bootstrap';
 import { ROUTES } from 'routes';
 import { useHistory } from 'react-router-dom';
+import { signIn } from 'store/atoms';
+import { useRecoilState } from 'recoil';
 
 const SignIn = () => {
+  const [signInState, setSignInState] = useRecoilState(signIn);
   const history = useHistory();
+
+  const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    const { name, value } = event.target;
+    setSignInState((prevState) => {
+      return {
+        ...prevState,
+        [name]: value,
+      };
+    });
+  };
 
   const handleSignIn = () => {
     history.push(ROUTES.ID);
@@ -16,19 +29,26 @@ const SignIn = () => {
         <Col xs={12} sm={8} md={6} className="">
           <Card className="mx-auto my-auto py-3 px-4">
             <Card.Title className="text-uppercase text-center">Delirium</Card.Title>
-            <Form onSubmit={handleSignIn}>
-              <Form.Group>
-                <Form.Label>Numer pracownika</Form.Label>
-                <Form.Control type="email" placeholder="Enter email" />
-              </Form.Group>
+            <Form className="mt-2" onSubmit={handleSignIn}>
+              <Form.Control
+                className="mb-3"
+                value={signInState.id}
+                name="id"
+                type="email"
+                placeholder="Numer pracownika"
+                onChange={handleChange}
+              />
+              <Form.Control
+                type="password"
+                name="pass"
+                placeholder="Hasło"
+                value={signInState.pass}
+                onChange={handleChange}
+              />
 
-              <Form.Group>
-                <Form.Label>Password</Form.Label>
-                <Form.Control type="password" placeholder="Password" />
-              </Form.Group>
               <Row className="justify-content-center mt-3">
                 <Button variant="primary" type="submit">
-                  Submit
+                  Loguj
                 </Button>
               </Row>
             </Form>

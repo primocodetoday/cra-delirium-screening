@@ -6,17 +6,13 @@ import { useForm } from 'react-hook-form';
 
 // wypełniany jako stan
 const TreatmentResults = () => {
-  const { register, handleSubmit, errors } = useForm();
-  const onSubmit = (data: any) => {
-    const date = new Date();
-    console.dir(date);
-  };
+  const { register, errors } = useForm();
 
   return (
     <Row className="d-flex justify-content-center mt-3">
       <Col xs="10" sm="8" className="px-3">
         <h3 className="text-uppercase text-center mb-4">Wyniki leczenia</h3>
-        <Form onSubmit={handleSubmit(onSubmit)}>
+        <Form>
           {treatForm.map((input) => (
             <InputSelector
               key={input.id}

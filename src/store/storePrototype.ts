@@ -40,7 +40,7 @@ export const store = [
       czashosp: {
         hoursSummary: 15,
         isActive: true,
-        time: {
+        duration: {
           start: '2020-02-01 18:50',
           end: '2020-02-01 18:50',
         },
@@ -49,7 +49,7 @@ export const store = [
       katechol: {
         hoursSummary: 14,
         isActive: true,
-        time: [
+        duration: [
           {
             start: '2020-02-01 18:50',
             end: '2020-02-01 18:50',
@@ -66,7 +66,7 @@ export const store = [
       przymus: {
         hoursSummary: 14,
         isActive: true,
-        time: [
+        duration: [
           {
             start: '2020-02-01 18:50',
             end: '2020-02-01 18:50',
@@ -83,7 +83,7 @@ export const store = [
       swiadom: {
         hoursSummary: 14,
         isActive: true,
-        time: [
+        duration: [
           {
             start: '2020-02-01 18:50',
             end: '2020-02-01 18:50',
@@ -97,7 +97,7 @@ export const store = [
       tnerkozast: {
         hoursSummary: 14,
         isActive: true,
-        time: [
+        duration: [
           {
             start: '2020-02-01 18:50',
             end: '2020-02-01 18:50',
@@ -112,7 +112,7 @@ export const store = [
       wentyl: {
         hoursSummary: 14,
         isActive: true,
-        time: [
+        duration: [
           {
             start: '2020-02-01 18:50',
             end: '2020-02-01 18:50',

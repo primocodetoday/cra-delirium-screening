@@ -5,8 +5,8 @@ interface InputRadioProps {
   label: string;
   name: string;
   options: { label: string; value: number }[] | undefined;
-  register: any;
   error: any;
+  register: any;
 }
 
 const InputRadio = ({ label, name, options, register, error }: InputRadioProps) => {

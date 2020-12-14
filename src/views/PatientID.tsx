@@ -14,7 +14,7 @@ const PatientID = () => {
   return (
     <UserTemplate>
       <Row className=" justify-content-center mt-5">
-        <Col xs={12} sm={8} md={5} className="mb-3">
+        <Col xs={12} md={5} className="mb-3">
           <Card className="py-3 px-4">
             <Card.Title className="text-uppercase text-center">PODAJ ID PACJENTA</Card.Title>
             <Form onSubmit={handleID}>
@@ -28,7 +28,7 @@ const PatientID = () => {
             </Form>
           </Card>
         </Col>
-        <Col xs={12} sm={8} md={5} className="mb-3">
+        <Col xs={12} md={7} className="mb-3">
           <Card className="py-3 px-4">
             <Card.Title>Pacjent : 35435</Card.Title>
             <Card.Subtitle className="text-muted mb-2">

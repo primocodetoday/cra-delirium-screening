@@ -4,12 +4,28 @@ import { dossForm } from 'constants/dossForm';
 import { useForm } from 'react-hook-form';
 import InputRadio from 'components/atoms/InputRadio';
 
+interface DossScaleFormData {
+  doss01: string;
+  doss02: string;
+  doss03: string;
+  doss04: string;
+  doss05: string;
+  doss06: string;
+  doss07: string;
+  doss08: string;
+  doss09: string;
+  doss10: string;
+  doss11: string;
+  doss12: string;
+  doss13: string;
+}
+
 // wypełniany  wiele razy
 const DossScale = () => {
   const { register, handleSubmit, errors } = useForm();
-  const onSubmit = (data: any) => {
-    console.log(data);
-  };
+  const onSubmit = React.useCallback((formValues: DossScaleFormData) => {
+    console.log(formValues);
+  }, []);
 
   const inputFields = dossForm.map((field) => {
     const { id, label, name, options } = field;

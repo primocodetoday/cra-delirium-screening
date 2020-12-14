@@ -12,8 +12,8 @@ const TopNav = () => {
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="ml-auto">
-          <Nav.Link as={NavLink} exact to={ROUTES.HOME} className="ml-auto text-uppercase" href="#home">
-            Home
+          <Nav.Link as={NavLink} exact to={ROUTES.ID} className="ml-auto text-uppercase" href="#home">
+            Pacjenci
           </Nav.Link>
           <Nav.Link className="ml-auto " href="#home">
             WYLOGUJ
