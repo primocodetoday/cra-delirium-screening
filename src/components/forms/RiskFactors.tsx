@@ -21,7 +21,7 @@ const RiskFactors = () => {
               options={input.options}
               type={input.type}
               register={register}
-              error={errors[input.name]}
+              errors={errors}
             />
           ))}
           <Row className="justify-content-center">

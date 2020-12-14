@@ -1,6 +1,7 @@
 ﻿import * as React from 'react';
 import { Form, Row, Col, Card } from 'react-bootstrap';
 import InputRadio from './atoms/InputRadio';
+import { UseFormMethods } from 'react-hook-form';
 
 export enum InputType {
   SELECT = 'select',
@@ -10,20 +11,18 @@ export enum InputType {
   RADIO = 'radio',
 }
 
-export type InputProps = {
+export interface InputProps extends Partial<Pick<UseFormMethods, 'register' | 'errors'>> {
   label: string;
   name: string;
   options?: { label: string; value: number }[];
   type?: InputType;
-  register: any;
-  error: any;
-};
+}
 
-export const InputSelector = ({ label, name, options = [], type = InputType.TEXT, register, error }: InputProps) => {
+export const InputSelector = ({ label, name, options = [], type = InputType.TEXT, register, errors }: InputProps) => {
   return (
     <>
       {type === InputType.RADIO ? (
-        <InputRadio name={name} options={options} register={register} label={label} error={error} />
+        <InputRadio name={name} options={options} register={register} label={label} errors={errors} />
       ) : null}
       {type === InputType.NUMBER ? (
         <Card className="p-3 my-3 bg-light">

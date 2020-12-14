@@ -1,15 +1,14 @@
 import * as React from 'react';
 import { Card, Col, Row, FormCheck } from 'react-bootstrap';
+import { UseFormMethods } from 'react-hook-form';
 
-interface InputRadioProps {
+interface InputRadioProps extends Partial<Pick<UseFormMethods, 'register' | 'errors'>> {
   label: string;
   name: string;
   options: { label: string; value: number }[] | undefined;
-  error: any;
-  register: any;
 }
 
-const InputRadio = ({ label, name, options, register, error }: InputRadioProps) => {
+const InputRadio = ({ label, name, options, register, errors = {} }: InputRadioProps) => {
   const radioOptions = options
     ? options.map((opt, idx) => (
         <Row key={idx} className="d-flex align-items-center form-check mb-2">
@@ -23,7 +22,7 @@ const InputRadio = ({ label, name, options, register, error }: InputRadioProps) 
     <Card className="p-3 my-3 bg-light">
       <Row>
         <Col xs="8">
-          <h6 className={`${error && 'text-danger'}`}>{label}</h6>
+          <h6 className={`${errors[name] && 'text-danger'}`}>{label}</h6>
         </Col>
         <Col xs="4" className="d-flex flex-column justify-content-center ">
           {radioOptions}

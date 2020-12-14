@@ -2,11 +2,12 @@
 import { Container, Card, Row, Col, Form, Button } from 'react-bootstrap';
 import { ROUTES } from 'routes';
 import { useHistory } from 'react-router-dom';
-import { signIn } from 'store/atoms';
-import { useRecoilState } from 'recoil';
+import { signIn, loggedUser } from 'store/atoms';
+import { useRecoilState, useSetRecoilState } from 'recoil';
 
 const SignIn = () => {
   const [signInState, setSignInState] = useRecoilState(signIn);
+  const setUser = useSetRecoilState(loggedUser);
   const history = useHistory();
 
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -20,6 +21,7 @@ const SignIn = () => {
   };
 
   const handleSignIn = () => {
+    setUser('Sebastian');
     history.push(ROUTES.ID);
   };
 

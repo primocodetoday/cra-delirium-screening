@@ -13,7 +13,7 @@ const PatientID = () => {
 
   return (
     <UserTemplate>
-      <Row className=" justify-content-center mt-5">
+      <Row className=" justify-content-center mt-3">
         <Col xs={12} md={5} className="mb-3">
           <Card className="py-3 px-4">
             <Card.Title className="text-uppercase text-center">PODAJ ID PACJENTA</Card.Title>

@@ -1,19 +1,13 @@
 ﻿import React from 'react';
 import { Button, Row, Card, Col } from 'react-bootstrap';
-import * as dayjs from 'dayjs';
 import { Link } from 'react-router-dom';
 import { ROUTES } from 'routes';
 import UserTemplate from 'templates/UserTemplate';
 
 const Patient = () => {
-  const now = dayjs.default().format('YYYY-MM-DD HH:mm:ss');
-
   return (
     <UserTemplate>
-      <div className="my-3 text-center">
-        Aktualna godzina: <span className="font-weight-bold">{now}</span>
-      </div>
-      <Row className="mt-4 justify-content-center">
+      <Row className="mt-3 justify-content-center">
         <Col xs="12" sm="8">
           <Card className="py-3 px-4">
             <Card.Title>Pacjent : 35435</Card.Title>

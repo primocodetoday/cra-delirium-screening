@@ -24,21 +24,13 @@ interface DossScaleFormData {
 const DossScale = () => {
   const { register, handleSubmit, errors } = useForm();
   const onSubmit = React.useCallback((formValues: DossScaleFormData) => {
+    // eslint-disable-next-line no-console
     console.log(formValues);
   }, []);
 
   const inputFields = dossForm.map((field) => {
     const { id, label, name, options } = field;
-    return (
-      <InputRadio
-        key={id}
-        label={label}
-        name={name}
-        options={options}
-        register={register({ required: true })}
-        error={errors[name]}
-      />
-    );
+    return <InputRadio key={id} label={label} name={name} options={options} register={register} errors={errors} />;
   });
 
   return (

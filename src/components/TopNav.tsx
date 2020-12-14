@@ -5,13 +5,13 @@ import { NavLink } from 'react-router-dom';
 
 const TopNav = () => {
   return (
-    <Navbar bg="light" expand="lg" className="mb-4">
-      <Navbar.Brand as={NavLink} exact to={ROUTES.HOME}>
+    <Navbar bg="dark" expand="lg" className="mb-4" variant="dark">
+      <Navbar.Brand className="mr-auto" as={NavLink} exact to={ROUTES.HOME}>
         Delirium Screening
       </Navbar.Brand>
-      <Navbar.Toggle aria-controls="basic-navbar-nav" />
-      <Navbar.Collapse id="basic-navbar-nav">
-        <Nav className="ml-auto">
+      <Navbar.Toggle className="" aria-controls="basic-navbar-nav" />
+      <Navbar.Collapse className="" id="basic-navbar-nav">
+        <Nav className="ml-auto ">
           <Nav.Link as={NavLink} exact to={ROUTES.ID} className="ml-auto text-uppercase" href="#home">
             Pacjenci
           </Nav.Link>
